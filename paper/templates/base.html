@@ -1,0 +1,58 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-blue-600 text-white p-4 shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold"><a href="{% url 'base' %}"<span class="bg-red-600 text-white px-3 py-1 rounded">prothom Alo News</span></a></h1>
+        <ul class="flex gap-6 font-semibold">
+            <li><a href="{% url 'home' %}" class="hover:text-gray-200">Home</a></li>
+            <li><a href="{% url 'home' %}#news" class="hover:text-gray-200">News</a></li>
+            <li><a href="{% url 'home' %}#post" class="hover:text-gray-200">Post</a></li>
+            <li><a href="{% url 'contact' %}" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+ <div class="relative mt-12 bg-[url('https://media.prothomalo.com/prothomalo-bangla/2021-01/1d75151c-eff9-4e9f-ac28-aebc4618d00f/palo_bangla_og.png')] bg-cover bg-center py-60">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative  px-6 max-w-2xl mx-auto -top-20">
+        <h1 class="text-3xl font-bold text-white">
+            Welcome to Our <span class="text-red-600">Prothom Alo</span> News
+        </h1><br>
+        <h4 class="text-white md:text-lg leading-relaxed">
+            প্রথম আলো বাংলাদেশের একটি জনপ্রিয় বাংলা দৈনিক সংবাদপত্র। ১৯৯৮ সালে এটি যাত্রা শুরু করে এবং বর্তমানে দেশ-বিদেশের খবর, রাজনীতি, খেলাধুলা, বিনোদন, শিক্ষা ও প্রযুক্তিসহ বিভিন্ন বিষয়ে নির্ভরযোগ্য সংবাদ প্রকাশ করে। প্রিন্ট সংস্করণের পাশাপাশি এর অনলাইন নিউজ পোর্টালও খুব জনপ্রিয়, যেখানে প্রতিদিন লক্ষাধিক পাঠক খবর পড়ে।
+        </h4>
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+<!-- Main Content -->
+ 
+    <!-- News Section -->
+   
+
+  
+
+</body>
+</html>  
