@@ -3,8 +3,8 @@ from . models import Post
 from django.contrib import messages
 
 # Create your views here.
-def base(request):
-    return render(request,'base.html')
+# def base(request):
+#     return render(request,'base.html')
 
 # used static backend
 def home(request):
@@ -25,6 +25,7 @@ def home(request):
             'image':'https://media.prothomalo.com/prothomalo-bangla%2F2025-05-03%2Ftvdl6gx3%2FTrump-Tax.jpg?rect=0%2C0%2C621%2C414&w=622&auto=format%2Ccompress&fmt=avif'
         },
     ]
+    # dynamic backend
     Posts=Post.objects.all()   
     return render(request,'home.html',{
         'News':News,

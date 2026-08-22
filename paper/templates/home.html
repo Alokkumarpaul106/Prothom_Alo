@@ -3,13 +3,13 @@
 {% block content %}
 
 <!-- Hero Section -->
-<div class="relative mt-12 bg-[url('https://images.unsplash.com/photo-1504711434969-e33886168f5c')] bg-cover bg-center py-40">
+<div class="relative mt-6 bg-[url('https://images.unsplash.com/photo-1504711434969-e33886168f5c')] bg-cover w-full h-[450px] bg-center flex items-center justify-center">
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/50"></div>
 
     <!-- Hero content -->
-    <div class="relative text-center px-6 max-w-2xl mx-auto text-white">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    <div class="relative text-center max-w-2xl mx-auto text-white">
+        <h1 class="text-4xl mb-4 md:text-5xl font-bold">
             Welcome to Our <span class="text-red-500">Prothom Alo</span> News
         </h1>
         <p class="text-lg md:text-xl">
@@ -24,8 +24,8 @@
 <!-- News Section -->
  <section id="news">
   
-<div class="container mx-auto p-16">
-    <h2 class="text-2xl font-bold mb-6 text-center">Latest News</h2>
+<div class="container mx-auto p-14">
+    <h2 class="text-2xl font-bold mb-6 mt-6 text-center">Latest News</h2>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {% for items in News %}
@@ -40,10 +40,11 @@
     </div>
 </div>
 </section>
+
  <section id="post">
 <!-- used dynamic backend -->
-<div class="container mx-auto p-16">
-    <h2 class="text-2xl font-bold mb-6 text-center">Post News</h2>
+<div class="container mx-auto p-14">
+    <h2 class="text-2xl font-bold mb-6 mt-6 text-center">Post News</h2>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {% for items in Post %}
